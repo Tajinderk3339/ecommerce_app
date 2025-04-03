@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
+<div id="loading-overlay" style="display: none;">
+    <div class="loader"></div>
+</div>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
             <!-- Hamburger Menu Toggle -->
@@ -61,15 +64,17 @@
                 </li>
             <?php endif; ?>
         </ul>
-        <!-- Theme Picker -->
         <?php if (isset($_SESSION['user_id'])): ?>
-            <h5 class="mt-4">Theme Color</h5>
-            <div class="theme-picker">
-                <button class="theme-btn" data-color="blue" style="background-color: #007bff;"></button>
-                <button class="theme-btn" data-color="red" style="background-color: #ff6f61;"></button>
-                <button class="theme-btn" data-color="green" style="background-color: #28a745;"></button>
-            </div>
-        <?php endif; ?>
+    <h5 class="mt-4">Theme Color</h5>
+    <div class="theme-picker">
+        <button class="theme-btn" data-color="blue" style="background-color: #007bff;"></button>
+        <button class="theme-btn" data-color="red" style="background-color: #ff6f61;"></button>
+        <button class="theme-btn" data-color="green" style="background-color: #28a745;"></button>
+        <button class="theme-btn" data-color="black" style="background-color: #000000;"></button>
+        <button class="theme-btn" data-color="dark" style="background-color: #343a40;"></button> <!-- Dark theme button -->
+    </div>
+<?php endif; ?>
+       
     </div>
 
     <div class="container mt-4">

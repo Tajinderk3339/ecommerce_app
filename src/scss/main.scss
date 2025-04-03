@@ -22,6 +22,7 @@ $theme-blue: #007bff;
 $theme-red: #ff6f61;
 $theme-green: #28a745;
 
+
 :root {
   --background: #{$background};
   --text: #{$text};
@@ -30,6 +31,50 @@ $theme-green: #28a745;
   --shadow: #{$shadow};
   --accent1: #{$accent1};
   --accent2: #{$accent2};
+}
+footer {
+  background-color: var(--background);
+  color: var(--text);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+[data-theme-color="dark"] {
+  --navbar-bg: #212529;
+  --background: #343a40;
+  --text: #ffffff; // White text for readability
+  --primary: #007bff; // Keep primary color, or adjust if desired
+  --card-bg: #495057; // Slightly lighter gray for cards
+}
+
+// [data-theme-color="black"] {
+//   footer {
+//     background-color: #1a1a1a; // Match black theme body
+//     color: #ffffff; // White text for readability
+//   }
+// }
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1);
 }
 
 [data-theme="dark"] {
