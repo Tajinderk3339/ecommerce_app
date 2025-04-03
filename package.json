@@ -1,0 +1,16 @@
+{
+  "name": "ecommerce_app",
+  "version": "1.0.0",
+  "description": "This is an inventory management app",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass src/scss/main.scss assets/css/main.css"
+  },
+  "author": "Taj",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "sass": "^1.86.1"
+  }
+}
